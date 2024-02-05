@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 90rem;
+    margin: 5rem auto;
+}
+
+.main-content {
+    margin: 2.4rem;
+}
+
+.main-heading {
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+}
+
+.main-heading strong {
+    color: black;
+    font-size: 4.8rem;
+}
+
+img:last-child {
+    width: 100%;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.introduction-text {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    gap: 1.5rem;
+}
+
+input {
+    width: 35rem;
+    height: 5rem;
+    border: solid 1px hsl(0, 0%, 79%);
+    border-radius: 3rem;
+    outline: none;
+    padding-left: 2.4rem;
+}
+
+input::placeholder {
+    color: hsl(0, 0%, 79%);
+    font-size: 1.5rem;
+}
+
+.form-button {
+    height: 5rem;
+    width: 15rem;
+    background-color: #4d7ef3;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.3);
+    border: none;
+    border-radius: 3rem;
+}
+
+.email-input {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.email-input label {
+    color: hsl(354, 100%, 66%);
+    font-size: 1.4rem;
+    margin-left: 2.4rem;
+}
+
+.socials {
+    margin-top: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+ion-icon {
+    color: #4d7ef3;
+    font-size: 2rem;
+}
+
+.socials ion-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 1rem;
+    background-color: transparent;
+    border: solid 1px hsl(0, 0%, 79%);
+    border-radius: 50%;
+}
+
+ion-icon:active,
+ion-icon:hover {
+    color: white;
+    background-color: #4d7ef3;
+}
+
+.copyright-text p {
+    color: hsl(0, 0%, 79%);
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+button:active,
+button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 35em) {
+    html {
+        font-size: 50%;
+    }
+
+    .main-heading {
+        font-size: 3.2rem;
+    }
+
+    .main-heading strong {
+        font-size: inherit;
+    }
+
+    .introduction-text p {
+        font-size: 1.6rem;
+        margin-top: 3.2rem;
+    }
+    .form {
+        flex-direction: column;
+    }
+
+    .form-button {
+        width: 100%;
+    }
+
+    img:last-child {
+        margin-top: 4.8rem;
+        width: 90%;
+    }
+}
